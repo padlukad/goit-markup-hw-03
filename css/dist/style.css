@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.container .button button, .container main .upper_row ul li p, .container main .upper_row ul .left p, .container main .lower__row ul li p, .container main .lower__row ul .left p, .container main .upper_row ul li h1, .container main .upper_row ul .left h1, .container main .lower__row ul li h1, .container main .lower__row ul .left h1, .container .nav ul a {
+  color: #626262;
+  font-weight: 400;
+  font-family: "Playfair Display";
+}
+
+.container main .upper_row ul li span, .container main .upper_row ul .left span, .container main .lower__row ul li span, .container main .lower__row ul .left span {
+  font-size: 14px;
+  color: #b4ad9e;
+  font-weight: 300;
+  font-family: "Ubuntu";
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.container .nav {
+  height: 60px;
+  padding: 50px 80px 25px 80px;
+  margin-bottom: 30px;
+}
+.container .nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.container .nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container .nav ul a:hover {
+  color: #03a9f4;
+}
+.container main .upper_row, .container main .lower__row {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.container main .upper_row ul, .container main .lower__row ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.container main .upper_row ul .left, .container main .lower__row ul .left {
+  margin-right: 60px;
+}
+.container main .upper_row ul li, .container main .upper_row ul .left, .container main .lower__row ul li, .container main .lower__row ul .left {
+  align-items: flex-start;
+}
+.container main .upper_row ul li img, .container main .upper_row ul .left img, .container main .lower__row ul li img, .container main .lower__row ul .left img {
+  width: 420px;
+  height: 280px;
+  margin-bottom: 25px;
+}
+.container main .upper_row ul li span, .container main .upper_row ul .left span, .container main .lower__row ul li span, .container main .lower__row ul .left span {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.container main .upper_row ul li h1, .container main .upper_row ul .left h1, .container main .lower__row ul li h1, .container main .lower__row ul .left h1 {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.container main .upper_row ul li p, .container main .upper_row ul .left p, .container main .lower__row ul li p, .container main .lower__row ul .left p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.container .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container .button button {
+  width: 160px;
+  height: 60px;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}

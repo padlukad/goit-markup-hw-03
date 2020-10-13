@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+%font-main {
+    color: #626262;
+    font-weight: 400;
+    font-family: "Playfair Display";
+}
+%font-span {
+    font-size: 14px;
+    color: #b4ad9e;
+    font-weight: 300;
+    font-family: "Ubuntu";
+}
+* {  
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1200px;
+    height: 100vh;
+    background-color: #fff;
+}
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+    .nav {
+        height: 60px;
+        padding:  50px 80px 25px 80px;
+        margin-bottom: 30px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            a {
+                @extend %font-main;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    color: #03a9f4;
+                }
+            }
+
+        }
+    }
+    main {
+        .upper_row, .lower__row {
+            margin-top: 20px;
+            margin-bottom: 100px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                .left {
+                    margin-right: 60px;
+                }
+                li, .left {
+                    align-items: flex-start;
+                    img {
+                        width: 420px;
+                        height: 280px;
+                        margin-bottom: 25px;
+                    }
+                    span {
+                        @extend %font-span;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                    h1 {
+                        @extend %font-main;
+                        font-size: 30px;
+                        margin-top: 15px;
+                        margin-bottom: 40px;
+                    }
+                    p {
+                        @extend %font-main;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }       
+            }
+        }
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        button {
+            @extend %font-main;
+            width: 160px;
+            height: 60px;
+            background-color: #fff;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
